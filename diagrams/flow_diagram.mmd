@@ -1,0 +1,115 @@
+flowchart TD
+    Start([Usuário Acessa FitLife]) --> Login{Usuário<br/>Autenticado?}
+    
+    Login -->|Não| AuthFlow[Fluxo de Autenticação OAuth]
+    AuthFlow --> CreateProfile[Criar Perfil Físico]
+    CreateProfile --> Dashboard
+    
+    Login -->|Sim| Dashboard[Dashboard Principal]
+    
+    Dashboard --> MenuOptions{Escolher Ação}
+    
+    %% Fluxo de Treinos
+    MenuOptions -->|Treinos| TreinoMenu{Opções de Treino}
+    TreinoMenu -->|Registrar| SelectTreinoType[Selecionar Tipo de Treino]
+    SelectTreinoType --> TreinoType{Tipo?}
+    TreinoType -->|Cardio| FormCardio[Preencher Dados Cardio]
+    TreinoType -->|Musculação| FormMusc[Preencher Dados Musculação]
+    TreinoType -->|Funcional| FormFunc[Preencher Dados Funcional]
+    
+    FormCardio --> AddExercises[Adicionar Exercícios]
+    FormMusc --> AddExercises
+    FormFunc --> AddExercises
+    
+    AddExercises --> SaveTreino[Salvar Treino]
+    SaveTreino --> UpdateProgress[Atualizar Progresso]
+    UpdateProgress --> Dashboard
+    
+    TreinoMenu -->|Ver Histórico| ListTreinos[Listar Treinos]
+    ListTreinos --> FilterTreinos{Filtrar/Ordenar<br/>LINQ}
+    FilterTreinos --> ShowTreinos[Exibir Treinos]
+    ShowTreinos --> Dashboard
+    
+    TreinoMenu -->|Sugestões IA| GetSuggestions[Obter Sugestões de Treino]
+    GetSuggestions --> AnalyzeUser[Analisar Perfil e Histórico]
+    AnalyzeUser --> CallIA[Chamar Serviço de IA]
+    CallIA --> GenerateSuggestion[Gerar Sugestão Personalizada]
+    GenerateSuggestion --> ShowSuggestion[Exibir Sugestão]
+    ShowSuggestion --> AcceptSuggestion{Aceitar?}
+    AcceptSuggestion -->|Sim| CreateFromSuggestion[Criar Treino da Sugestão]
+    CreateFromSuggestion --> SaveTreino
+    AcceptSuggestion -->|Não| Dashboard
+    
+    %% Fluxo de Alimentação
+    MenuOptions -->|Alimentação| AlimentacaoMenu{Opções de Alimentação}
+    AlimentacaoMenu -->|Registrar| FormAlimentacao[Preencher Dados Refeição]
+    FormAlimentacao --> CalcMacros[Calcular Macronutrientes]
+    CalcMacros --> SaveAlimentacao[Salvar Alimentação]
+    SaveAlimentacao --> UpdateProgress
+    
+    AlimentacaoMenu -->|Ver Histórico| ListAlimentacao[Listar Alimentações]
+    ListAlimentacao --> FilterAlimentacao{Filtrar por<br/>Período/Refeição<br/>LINQ}
+    FilterAlimentacao --> ShowAlimentacao[Exibir Alimentações]
+    ShowAlimentacao --> Dashboard
+    
+    %% Fluxo de Hábitos
+    MenuOptions -->|Hábitos| HabitoMenu{Opções de Hábitos}
+    HabitoMenu -->|Criar| FormHabito[Preencher Dados Hábito]
+    FormHabito --> SaveHabito[Salvar Hábito]
+    SaveHabito --> Dashboard
+    
+    HabitoMenu -->|Registrar Conclusão| ListHabitos[Listar Hábitos Ativos]
+    ListHabitos --> SelectHabito[Selecionar Hábito]
+    SelectHabito --> RegisterCompletion[Registrar Conclusão]
+    RegisterCompletion --> CalcStreak[Calcular Sequência]
+    CalcStreak --> UpdateProgress
+    
+    HabitoMenu -->|Ver Estatísticas| ShowHabitoStats[Exibir Estatísticas]
+    ShowHabitoStats --> CalcCompletionRate[Calcular Taxa de Conclusão<br/>LINQ]
+    CalcCompletionRate --> Dashboard
+    
+    %% Fluxo de Progresso
+    MenuOptions -->|Progresso| ProgressMenu{Opções de Progresso}
+    ProgressMenu -->|Ver Evolução| GetProgressData[Obter Dados de Progresso]
+    GetProgressData --> CalcMetrics[Calcular Métricas<br/>LINQ]
+    CalcMetrics --> ShowCharts[Exibir Gráficos]
+    ShowCharts --> Dashboard
+    
+    ProgressMenu -->|Análise IA| CallIAAnalysis[Chamar Análise de IA]
+    CallIAAnalysis --> AnalyzeProgress[Analisar Progresso]
+    AnalyzeProgress --> GenerateInsights[Gerar Insights]
+    GenerateInsights --> ShowInsights[Exibir Análise]
+    ShowInsights --> Dashboard
+    
+    %% Fluxo de Ranking
+    MenuOptions -->|Ranking| GetRanking[Obter Ranking]
+    GetRanking --> CalcScores[Calcular Pontuações<br/>LINQ]
+    CalcScores --> SortRanking[Ordenar Ranking<br/>LINQ]
+    SortRanking --> ShowRanking[Exibir Ranking]
+    ShowRanking --> CompareWithSimilar[Comparar com Similares<br/>IA]
+    CompareWithSimilar --> Dashboard
+    
+    %% Fluxo de Perfil
+    MenuOptions -->|Perfil| ProfileMenu{Opções de Perfil}
+    ProfileMenu -->|Editar| EditProfile[Editar Perfil Físico]
+    EditProfile --> UpdateProfile[Atualizar Perfil]
+    UpdateProfile --> Dashboard
+    
+    ProfileMenu -->|Ver Dados| ShowProfile[Exibir Perfil]
+    ShowProfile --> CalcIMC[Calcular IMC]
+    CalcIMC --> Dashboard
+    
+    %% Logout
+    MenuOptions -->|Sair| Logout[Logout]
+    Logout --> End([Fim])
+    
+    %% Estilos
+    classDef processClass fill:#4CAF50,stroke:#2E7D32,stroke-width:2px,color:#fff
+    classDef decisionClass fill:#2196F3,stroke:#1565C0,stroke-width:2px,color:#fff
+    classDef iaClass fill:#9C27B0,stroke:#6A1B9A,stroke-width:2px,color:#fff
+    classDef linqClass fill:#FF9800,stroke:#E65100,stroke-width:2px,color:#fff
+    
+    class SaveTreino,SaveAlimentacao,SaveHabito,UpdateProgress processClass
+    class Login,MenuOptions,TreinoMenu,AlimentacaoMenu,HabitoMenu,ProgressMenu,ProfileMenu decisionClass
+    class CallIA,GenerateSuggestion,CallIAAnalysis,AnalyzeProgress,GenerateInsights,CompareWithSimilar iaClass
+    class FilterTreinos,FilterAlimentacao,CalcMetrics,CalcScores,SortRanking,CalcCompletionRate linqClass

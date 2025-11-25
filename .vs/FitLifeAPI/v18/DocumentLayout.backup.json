@@ -1,0 +1,288 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Luiz\\source\\repos\\2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\dtos\\habitodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\dtos\\habitodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/FitLifeDB/True/SqlTable/dbo.Usuarios.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\servicos\\servicolinq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\servicos\\servicolinq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\dtos\\progressodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\dtos\\progressodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/FitLifeDB/True/SqlTable/dbo.Progressos.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/FitLifeDB/True/SqlTable/dbo.Treino.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\controllers\\refeicoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\controllers\\refeicoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\dados\\fitlifecontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\dados\\fitlifecontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\dtos\\refeicaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\dtos\\refeicaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\servicos\\iservicorefeicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\servicos\\iservicorefeicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\servicos\\servicorefeicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\servicos\\servicorefeicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\servicos\\iservicousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\servicos\\iservicousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\servicos\\servicousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\servicos\\servicousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|c:\\users\\luiz\\source\\repos\\2\\fitlifeapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5441D729-D40C-4056-9D18-3B829E204656}|FitLifeAPI\\FitLifeAPI.csproj|solutionrelative:fitlifeapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Luiz\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\780214867\\LinqController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServicoLinq.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Servicos\\ServicoLinq.cs",
+              "RelativeDocumentMoniker": "FitLifeAPI\\Servicos\\ServicoLinq.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Servicos\\ServicoLinq.cs",
+              "RelativeToolTip": "FitLifeAPI\\Servicos\\ServicoLinq.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAUwJgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:34:46.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dbo.Progressos.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/FitLifeDB/True/SqlTable/dbo.Progressos.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/FitLifeDB/True/SqlTable/dbo.Progressos.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-25T17:23:43.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dbo.Treino.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/FitLifeDB/True/SqlTable/dbo.Treino.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/FitLifeDB/True/SqlTable/dbo.Treino.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-25T17:23:22.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.Usuarios.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/FitLifeDB/True/SqlTable/dbo.Usuarios.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/FitLifeDB/True/SqlTable/dbo.Usuarios.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-25T17:23:10.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HabitoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\DTOs\\HabitoDTO.cs",
+              "RelativeDocumentMoniker": "FitLifeAPI\\DTOs\\HabitoDTO.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\DTOs\\HabitoDTO.cs",
+              "RelativeToolTip": "FitLifeAPI\\DTOs\\HabitoDTO.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwBgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T16:53:33.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LinqController.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\780214867\\LinqController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\780214867\\LinqController.cs",
+              "ToolTip": "C:\\Users\\Luiz\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\780214867\\LinqController.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\780214867\\LinqController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:52:33.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProgressoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\DTOs\\ProgressoDTO.cs",
+              "RelativeDocumentMoniker": "FitLifeAPI\\DTOs\\ProgressoDTO.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\DTOs\\ProgressoDTO.cs",
+              "RelativeToolTip": "FitLifeAPI\\DTOs\\ProgressoDTO.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAUwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:29:18.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ServicoUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Servicos\\ServicoUsuario.cs",
+              "RelativeDocumentMoniker": "FitLifeAPI\\Servicos\\ServicoUsuario.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Servicos\\ServicoUsuario.cs",
+              "RelativeToolTip": "FitLifeAPI\\Servicos\\ServicoUsuario.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:07:17.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "FitLifeAPI\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "FitLifeAPI\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:07:29.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IServicoUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Servicos\\IServicoUsuario.cs",
+              "RelativeDocumentMoniker": "FitLifeAPI\\Servicos\\IServicoUsuario.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Servicos\\IServicoUsuario.cs",
+              "RelativeToolTip": "FitLifeAPI\\Servicos\\IServicoUsuario.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBXwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:06:56.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RefeicoesController.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Controllers\\RefeicoesController.cs",
+              "RelativeDocumentMoniker": "FitLifeAPI\\Controllers\\RefeicoesController.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Controllers\\RefeicoesController.cs",
+              "RelativeToolTip": "FitLifeAPI\\Controllers\\RefeicoesController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T16:56:34.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServicoRefeicao.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Servicos\\ServicoRefeicao.cs",
+              "RelativeDocumentMoniker": "FitLifeAPI\\Servicos\\ServicoRefeicao.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Servicos\\ServicoRefeicao.cs",
+              "RelativeToolTip": "FitLifeAPI\\Servicos\\ServicoRefeicao.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:02:42.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IServicoRefeicao.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Servicos\\IServicoRefeicao.cs",
+              "RelativeDocumentMoniker": "FitLifeAPI\\Servicos\\IServicoRefeicao.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Servicos\\IServicoRefeicao.cs",
+              "RelativeToolTip": "FitLifeAPI\\Servicos\\IServicoRefeicao.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAIBXwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:02:22.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RefeicaoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\DTOs\\RefeicaoDTO.cs",
+              "RelativeDocumentMoniker": "FitLifeAPI\\DTOs\\RefeicaoDTO.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\DTOs\\RefeicaoDTO.cs",
+              "RelativeToolTip": "FitLifeAPI\\DTOs\\RefeicaoDTO.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAABnwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:02:15.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\README.md",
+              "RelativeDocumentMoniker": "FitLifeAPI\\README.md",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\README.md",
+              "RelativeToolTip": "FitLifeAPI\\README.md",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-25T16:55:29.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FitLifeContexto.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Dados\\FitLifeContexto.cs",
+              "RelativeDocumentMoniker": "FitLifeAPI\\Dados\\FitLifeContexto.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\Dados\\FitLifeContexto.cs",
+              "RelativeToolTip": "FitLifeAPI\\Dados\\FitLifeContexto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T16:54:45.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\DTOs\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "FitLifeAPI\\DTOs\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\2\\FitLifeAPI\\DTOs\\UsuarioDTO.cs",
+              "RelativeToolTip": "FitLifeAPI\\DTOs\\UsuarioDTO.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAIAzwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T16:53:42.251Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using FitLifeAPI.Servicos;
+using FitLifeAPI.DTOs;
+
+namespace FitLifeAPI.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class LinqController : ControllerBase
+    {
+        private readonly IServicoLinq _servico;
+
+        public LinqController(IServicoLinq servico)
+        {
+            _servico = servico;
+        }
+
+        // GET: api/linq/ranking
+        [HttpGet("ranking")]
+        public async Task<ActionResult<List<RankingUsuarioDTO>>> Ranking()
+        {
+            var ranking = await _servico.ObterRankingUsuariosAsync();
+            return Ok(ranking);
+        }
+
+        // GET: api/linq/historico/5
+        [HttpGet("historico/{usuarioId}")]
+        public async Task<ActionResult<HistoricoUsuarioDTO>> Historico(int usuarioId)
+        {
+            var historico = await _servico.ObterHistoricoCompletoAsync(usuarioId);
+            return Ok(historico);
+        }
+
+        // GET: api/linq/sugestoes/treino/5
+        [HttpGet("sugestoes/treino/{usuarioId}")]
+        public async Task<ActionResult<List<string>>> SugestoesTreino(int usuarioId)
+        {
+            var sugestoes = await _servico.ObterSugestoesInteligentesTreinoAsync(usuarioId);
+            return Ok(sugestoes);
+        }
+
+        // GET: api/linq/sugestoes/alimentacao/5
+        [HttpGet("sugestoes/alimentacao/{usuarioId}")]
+        public async Task<ActionResult<List<string>>> SugestoesAlimentacao(int usuarioId)
+        {
+            var sugestoes = await _servico.ObterSugestoesInteligentesAlimentacaoAsync(usuarioId);
+            return Ok(sugestoes);
+        }
+    }
+}

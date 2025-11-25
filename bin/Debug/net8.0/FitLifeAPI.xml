@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FitLifeAPI</name>
+    </assembly>
+    <members>
+        <member name="T:FitLifeAPI.Controllers.AlimentacaoController">
+            <summary>
+            Controller para gerenciar alimentação
+            Demonstra uso de CRUD e LINQ
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.AlimentacaoController.GetAlimentacoes">
+            <summary>
+            Obtém todas as alimentações (GET)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.AlimentacaoController.GetAlimentacao(System.Int32)">
+            <summary>
+            Obtém uma alimentação específica por ID (GET)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.AlimentacaoController.GetAlimentacoesPorUsuario(System.Int32)">
+            <summary>
+            Obtém alimentações por usuário (GET) - Demonstra LINQ
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.AlimentacaoController.GetAlimentacoesPorRefeicao(System.String)">
+            <summary>
+            Filtra alimentações por tipo de refeição (GET) - Demonstra LINQ
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.AlimentacaoController.CreateAlimentacao(FitLifeAPI.Models.Alimentacao)">
+            <summary>
+            Cria uma nova alimentação (POST)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.AlimentacaoController.UpdateAlimentacao(System.Int32,FitLifeAPI.Models.Alimentacao)">
+            <summary>
+            Atualiza uma alimentação (PUT)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.AlimentacaoController.DeleteAlimentacao(System.Int32)">
+            <summary>
+            Deleta uma alimentação (DELETE)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.AlimentacaoController.GetEstatisticas(System.Int32)">
+            <summary>
+            Obtém estatísticas nutricionais (GET) - Demonstra LINQ avançado
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Controllers.HabitosController">
+            <summary>
+            Controller para gerenciar hábitos
+            Demonstra uso de CRUD e LINQ
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.HabitosController.GetHabitos">
+            <summary>
+            Obtém todos os hábitos (GET)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.HabitosController.GetHabito(System.Int32)">
+            <summary>
+            Obtém um hábito específico por ID (GET)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.HabitosController.GetHabitosPorUsuario(System.Int32)">
+            <summary>
+            Obtém hábitos por usuário (GET) - Demonstra LINQ
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.HabitosController.GetHabitosAtivos(System.Int32)">
+            <summary>
+            Obtém hábitos ativos (GET) - Demonstra LINQ
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.HabitosController.CreateHabito(FitLifeAPI.Models.Habito)">
+            <summary>
+            Cria um novo hábito (POST)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.HabitosController.RegistrarConclusao(System.Int32,System.Boolean)">
+            <summary>
+            Registra conclusão de um hábito (POST)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.HabitosController.UpdateHabito(System.Int32,FitLifeAPI.Models.Habito)">
+            <summary>
+            Atualiza um hábito (PUT)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.HabitosController.DeleteHabito(System.Int32)">
+            <summary>
+            Deleta um hábito (DELETE)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.HabitosController.GetEstatisticas(System.Int32)">
+            <summary>
+            Obtém estatísticas de hábitos (GET) - Demonstra LINQ avançado
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Controllers.RankingController">
+            <summary>
+            Controller para gerenciar ranking de usuários
+            Demonstra uso intensivo de LINQ
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.RankingController.GetRanking(System.Int32)">
+            <summary>
+            Obtém o ranking geral de usuários (GET)
+            Demonstra LINQ: Join, GroupBy, OrderBy, Select
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.RankingController.GetRankingPorTipo(System.String,System.Int32)">
+            <summary>
+            Obtém ranking por tipo de treino (GET)
+            Demonstra LINQ com OfType (polimorfismo)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.RankingController.GetRankingPorCalorias(System.Int32)">
+            <summary>
+            Obtém ranking por calorias queimadas (GET)
+            Demonstra LINQ: OrderBy, Select
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.RankingController.GetPosicaoUsuario(System.Int32)">
+            <summary>
+            Obtém posição de um usuário específico no ranking (GET)
+            Demonstra LINQ: FindIndex
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.RankingController.GetRankingHabitos(System.Int32)">
+            <summary>
+            Obtém ranking de hábitos mais mantidos (GET)
+            Demonstra LINQ avançado
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Controllers.TreinosController">
+            <summary>
+            Controller para gerenciar treinos
+            Demonstra uso de CRUD e LINQ
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.TreinosController.GetTreinos">
+            <summary>
+            Obtém todos os treinos (GET)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.TreinosController.GetTreino(System.Int32)">
+            <summary>
+            Obtém um treino específico por ID (GET)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.TreinosController.GetTreinosPorUsuario(System.Int32)">
+            <summary>
+            Obtém treinos por usuário (GET) - Demonstra LINQ
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.TreinosController.GetTreinosPorTipo(System.String)">
+            <summary>
+            Filtra treinos por tipo (GET) - Demonstra LINQ
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.TreinosController.GetTreinosPorIntensidade(System.String)">
+            <summary>
+            Filtra treinos por intensidade (GET) - Demonstra LINQ
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.TreinosController.CreateTreinoCardio(FitLifeAPI.Models.TreinoCardio)">
+            <summary>
+            Cria um novo treino de cardio (POST)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.TreinosController.CreateTreinoMusculacao(FitLifeAPI.Models.TreinoMusculacao)">
+            <summary>
+            Cria um novo treino de musculação (POST)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.TreinosController.CreateTreinoFuncional(FitLifeAPI.Models.TreinoFuncional)">
+            <summary>
+            Cria um novo treino funcional (POST)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.TreinosController.ConcluirTreino(System.Int32)">
+            <summary>
+            Marca um treino como concluído (PUT)
+            Demonstra POLIMORFISMO - cada tipo calcula calorias de forma diferente
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.TreinosController.UpdateTreino(System.Int32,FitLifeAPI.Models.Treino)">
+            <summary>
+            Atualiza um treino (PUT)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.TreinosController.DeleteTreino(System.Int32)">
+            <summary>
+            Deleta um treino (DELETE)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Controllers.TreinosController.GetEstatisticas(System.Int32)">
+            <summary>
+            Obtém estatísticas de treinos (GET) - Demonstra LINQ avançado
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Data.DataContext">
+            <summary>
+            Classe responsável pela persistência de dados em arquivo JSON
+            Simula um banco de dados simples
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Data.DataContext.CarregarDados">
+            <summary>
+            Carrega os dados do arquivo JSON
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Data.DataContext.SalvarDados">
+            <summary>
+            Salva os dados no arquivo JSON
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Data.AppData">
+            <summary>
+            Classe que representa a estrutura de dados da aplicação
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Data.TreinoJsonConverter">
+            <summary>
+            Conversor JSON customizado para lidar com herança de Treino
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Models.Alimentacao">
+            <summary>
+            Classe que representa um registro de alimentação
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Alimentacao.CalcularPercentualProteinas">
+            <summary>
+            Calcula o percentual de proteínas em relação ao total de calorias
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Alimentacao.CalcularPercentualCarboidratos">
+            <summary>
+            Calcula o percentual de carboidratos em relação ao total de calorias
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Alimentacao.CalcularPercentualGorduras">
+            <summary>
+            Calcula o percentual de gorduras em relação ao total de calorias
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Alimentacao.Validar">
+            <summary>
+            Valida se os dados da alimentação estão corretos
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Models.Habito">
+            <summary>
+            Classe que representa um hábito saudável
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Habito.RegistrarConclusao(System.DateTime,System.Boolean)">
+            <summary>
+            Registra a conclusão do hábito para uma data
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Habito.CalcularSequencia">
+            <summary>
+            Calcula a sequência atual de dias consecutivos (usa LINQ)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Habito.CalcularTaxaConclusao">
+            <summary>
+            Calcula a taxa de conclusão do hábito (usa LINQ)
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Models.RegistroHabito">
+            <summary>
+            Classe que representa um registro de conclusão de hábito
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Models.IAtividade">
+            <summary>
+            Interface que define o contrato para atividades físicas
+            Demonstra o conceito de INTERFACE em POO
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.IAtividade.CalcularCalorias">
+            <summary>
+            Calcula as calorias queimadas na atividade
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.IAtividade.ObterDuracao">
+            <summary>
+            Obtém a duração da atividade em minutos
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.IAtividade.Validar">
+            <summary>
+            Valida se a atividade está com dados corretos
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Models.Treino">
+            <summary>
+            Classe abstrata base para todos os tipos de treino
+            Demonstra o conceito de CLASSE ABSTRATA e HERANÇA em POO
+            Implementa a interface IAtividade
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Treino.CalcularCalorias">
+            <summary>
+            Método abstrato que deve ser implementado pelas classes derivadas
+            Demonstra POLIMORFISMO - cada tipo de treino calcula calorias de forma diferente
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Treino.ObterDuracao">
+            <summary>
+            Método concreto implementado da interface IAtividade
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Treino.Validar">
+            <summary>
+            Método virtual que pode ser sobrescrito pelas classes derivadas
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Treino.MarcarConcluido">
+            <summary>
+            Marca o treino como concluído
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Models.TreinoCardio">
+            <summary>
+            Classe que representa um treino de cardio
+            Demonstra HERANÇA - herda de Treino
+            Demonstra POLIMORFISMO - implementa CalcularCalorias de forma específica
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.TreinoCardio.CalcularCalorias">
+            <summary>
+            Implementação específica do cálculo de calorias para cardio
+            Fórmula simplificada: duração * intensidade * fator de distância
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Models.TreinoFuncional">
+            <summary>
+            Classe que representa um treino funcional
+            Demonstra HERANÇA - herda de Treino
+            Demonstra POLIMORFISMO - implementa CalcularCalorias de forma específica
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.TreinoFuncional.CalcularCalorias">
+            <summary>
+            Implementação específica do cálculo de calorias para treino funcional
+            Fórmula simplificada: duração * intensidade * fator de exercícios
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Models.TreinoMusculacao">
+            <summary>
+            Classe que representa um treino de musculação
+            Demonstra HERANÇA - herda de Treino
+            Demonstra POLIMORFISMO - implementa CalcularCalorias de forma específica
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.TreinoMusculacao.CalcularCalorias">
+            <summary>
+            Implementação específica do cálculo de calorias para musculação
+            Fórmula simplificada: duração * intensidade * fator de carga
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.TreinoMusculacao.CalcularVolume">
+            <summary>
+            Calcula o volume total do treino (séries x repetições x carga)
+            </summary>
+        </member>
+        <member name="T:FitLifeAPI.Models.Usuario">
+            <summary>
+            Classe que representa um usuário do sistema
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Usuario.CalcularIMC">
+            <summary>
+            Calcula o IMC (Índice de Massa Corporal) do usuário
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Usuario.ObterTotalCaloriasQueimadas">
+            <summary>
+            Obtém o total de calorias queimadas (usa LINQ)
+            </summary>
+        </member>
+        <member name="M:FitLifeAPI.Models.Usuario.ObterTotalTreinosConcluidos">
+            <summary>
+            Obtém o total de treinos concluídos (usa LINQ)
+            </summary>
+        </member>
+    </members>
+</doc>

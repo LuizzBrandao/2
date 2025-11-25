@@ -1,0 +1,293 @@
+classDiagram
+    %% Classe Base Abstrata
+    class Usuario {
+        <<abstract>>
+        +int id
+        +string openId
+        +string name
+        +string email
+        +DateTime createdAt
+        +DateTime updatedAt
+        +string role
+        +PerfilFisico perfil
+        +List~Treino~ treinos
+        +List~Alimentacao~ alimentacoes
+        +List~Habito~ habitos
+        +calcularProgresso() ProgressoUsuario
+        +obterRanking() int
+    }
+
+    %% Perfil Físico do Usuário
+    class PerfilFisico {
+        +int id
+        +int usuarioId
+        +int altura
+        +decimal peso
+        +int idade
+        +string genero
+        +string nivelFitness
+        +string objetivo
+        +List~string~ equipamentosDisponiveis
+        +DateTime updatedAt
+        +calcularIMC() decimal
+    }
+
+    %% Interface para Atividades
+    class IAtividade {
+        <<interface>>
+        +calcularCalorias() int
+        +obterDuracao() int
+        +validar() bool
+    }
+
+    %% Classe Base Abstrata para Treinos
+    class Treino {
+        <<abstract>>
+        +int id
+        +int usuarioId
+        +string titulo
+        +string descricao
+        +DateTime data
+        +int duracaoMinutos
+        +int caloriasQueimadas
+        +string intensidade
+        +string status
+        +List~Exercicio~ exercicios
+        +calcularCalorias()* int
+        +obterDuracao() int
+        +validar() bool
+        +marcarConcluido() void
+    }
+
+    %% Tipos de Treino (Herança)
+    class TreinoCardio {
+        +decimal distanciaKm
+        +int frequenciaCardiacaMedia
+        +string tipoCardio
+        +calcularCalorias() int
+    }
+
+    class TreinoMusculacao {
+        +int series
+        +int repeticoes
+        +decimal cargaKg
+        +List~string~ gruposMusculares
+        +calcularCalorias() int
+        +calcularVolume() decimal
+    }
+
+    class TreinoFuncional {
+        +string tipoFuncional
+        +int numeroExercicios
+        +bool usaEquipamento
+        +calcularCalorias() int
+    }
+
+    %% Exercício
+    class Exercicio {
+        +int id
+        +int treinoId
+        +string nome
+        +int series
+        +int repeticoes
+        +decimal carga
+        +int tempoDescanso
+        +string grupoMuscular
+        +string equipamento
+        +bool concluido
+        +marcarConcluido() void
+    }
+
+    %% Alimentação
+    class Alimentacao {
+        +int id
+        +int usuarioId
+        +DateTime data
+        +string refeicao
+        +string descricao
+        +int calorias
+        +decimal proteinas
+        +decimal carboidratos
+        +decimal gorduras
+        +calcularMacros() MacroNutrientes
+        +validar() bool
+    }
+
+    %% Macro Nutrientes
+    class MacroNutrientes {
+        +decimal proteinas
+        +decimal carboidratos
+        +decimal gorduras
+        +int caloriasTotal
+        +calcularPercentuais() Dictionary~string, decimal~
+    }
+
+    %% Hábito
+    class Habito {
+        +int id
+        +int usuarioId
+        +string titulo
+        +string descricao
+        +string categoria
+        +string frequencia
+        +DateTime dataInicio
+        +bool ativo
+        +List~RegistroHabito~ registros
+        +registrarConclusao() void
+        +calcularSequencia() int
+        +calcularTaxaConclusao() decimal
+    }
+
+    %% Registro de Hábito
+    class RegistroHabito {
+        +int id
+        +int habitoId
+        +DateTime data
+        +bool concluido
+        +string observacoes
+    }
+
+    %% Progresso do Usuário
+    class ProgressoUsuario {
+        +int id
+        +int usuarioId
+        +DateTime data
+        +decimal pesoAtual
+        +int treinosRealizados
+        +int caloriasQueimadas
+        +int caloriasConsumidas
+        +int habitosConcluidos
+        +calcularEvolucao() EvolucaoMetricas
+    }
+
+    %% Evolução de Métricas
+    class EvolucaoMetricas {
+        +decimal variacaoPeso
+        +int variacaoTreinos
+        +decimal mediaCaloriasQueimadas
+        +decimal mediaCaloriasConsumidas
+        +decimal taxaHabitos
+    }
+
+    %% Sugestão de Treino (IA)
+    class SugestaoTreino {
+        +int id
+        +int usuarioId
+        +DateTime dataSugestao
+        +string tipoTreino
+        +string titulo
+        +string descricao
+        +List~ExercicioSugerido~ exercicios
+        +string justificativa
+        +int prioridade
+        +bool aceita
+        +aceitarSugestao() Treino
+    }
+
+    %% Exercício Sugerido
+    class ExercicioSugerido {
+        +string nome
+        +int series
+        +int repeticoes
+        +decimal cargaSugerida
+        +string grupoMuscular
+        +string equipamento
+    }
+
+    %% Ranking
+    class Ranking {
+        +int posicao
+        +int usuarioId
+        +string nomeUsuario
+        +int pontuacao
+        +int treinosRealizados
+        +int caloriasQueimadas
+        +calcularPontuacao() int
+    }
+
+    %% Repositórios (Interfaces)
+    class ITreinoRepository {
+        <<interface>>
+        +criar(Treino) Treino
+        +obterPorId(int) Treino
+        +obterPorUsuario(int) List~Treino~
+        +atualizar(Treino) Treino
+        +deletar(int) bool
+        +obterPorPeriodo(int, DateTime, DateTime) List~Treino~
+    }
+
+    class IAlimentacaoRepository {
+        <<interface>>
+        +criar(Alimentacao) Alimentacao
+        +obterPorId(int) Alimentacao
+        +obterPorUsuario(int) List~Alimentacao~
+        +atualizar(Alimentacao) Alimentacao
+        +deletar(int) bool
+        +obterPorPeriodo(int, DateTime, DateTime) List~Alimentacao~
+    }
+
+    class IHabitoRepository {
+        <<interface>>
+        +criar(Habito) Habito
+        +obterPorId(int) Habito
+        +obterPorUsuario(int) List~Habito~
+        +atualizar(Habito) Habito
+        +deletar(int) bool
+        +obterAtivos(int) List~Habito~
+    }
+
+    %% Serviço de IA
+    class IAService {
+        +gerarSugestaoTreino(Usuario) SugestaoTreino
+        +analisarProgresso(Usuario) AnaliseProgresso
+        +gerarInsights(Usuario) List~string~
+        +compararComSimilares(Usuario) ComparacaoUsuarios
+    }
+
+    %% Análise de Progresso
+    class AnaliseProgresso {
+        +string status
+        +List~string~ pontosFortes
+        +List~string~ areasParaMelhoria
+        +List~string~ recomendacoes
+        +decimal probabilidadeObjetivo
+    }
+
+    %% Comparação com Usuários Similares
+    class ComparacaoUsuarios {
+        +int totalUsuariosSimilares
+        +int posicaoRelativa
+        +decimal mediaGrupo
+        +decimal desempenhoUsuario
+        +string classificacao
+    }
+
+    %% Relacionamentos
+    Usuario "1" --> "1" PerfilFisico : possui
+    Usuario "1" --> "*" Treino : realiza
+    Usuario "1" --> "*" Alimentacao : registra
+    Usuario "1" --> "*" Habito : mantém
+    Usuario "1" --> "*" ProgressoUsuario : acompanha
+    Usuario "1" --> "*" SugestaoTreino : recebe
+
+    Treino <|-- TreinoCardio : herda
+    Treino <|-- TreinoMusculacao : herda
+    Treino <|-- TreinoFuncional : herda
+    Treino ..|> IAtividade : implementa
+    Treino "1" --> "*" Exercicio : contém
+
+    Alimentacao "1" --> "1" MacroNutrientes : calcula
+
+    Habito "1" --> "*" RegistroHabito : possui
+
+    ProgressoUsuario "1" --> "1" EvolucaoMetricas : calcula
+
+    SugestaoTreino "1" --> "*" ExercicioSugerido : contém
+
+    ITreinoRepository ..> Treino : gerencia
+    IAlimentacaoRepository ..> Alimentacao : gerencia
+    IHabitoRepository ..> Habito : gerencia
+
+    IAService ..> SugestaoTreino : gera
+    IAService ..> AnaliseProgresso : produz
+    IAService ..> ComparacaoUsuarios : calcula
